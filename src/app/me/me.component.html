@@ -2,8 +2,10 @@
 
 <h3>Tässä jotain random-faktoja ja pakollinen kuva...</h3>
 
+<img src="assets/P2150327.JPG" />
+
 <ul>
-  <li>Opintovapaalla</li>
-  <li>Istuu ikkunalla ja koodaa javaa (terveiset Jyväskylään Vesalle)</li>
-  <li>On talvi</li>
+  <li *ngFor='let fakta of myDatas'>
+    {{ fakta.info }}
+  </li>
 </ul>
