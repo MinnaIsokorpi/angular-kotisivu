@@ -5,11 +5,12 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { MeComponent } from './me/me.component';
 import { StudiesComponent } from './studies/studies.component';
 
-// Reitit tulevat routes-taulukkoon, taulukon olioiden tietotyyppinä Routes
+// Navigoinnin reitit tulevat routes-taulukkoon, taulukon olioiden tietotyyppinä Routes
 const routes: Routes = [
   { path: 'me', component: MeComponent },
   { path: 'studies', component: StudiesComponent },
   { path: 'hobbies', component: HobbiesComponent },
+  { path: '', redirectTo: '/me', pathMatch: 'full' },
 ];
 
 @NgModule({
