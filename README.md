@@ -6,7 +6,9 @@
 
 3. Luotu sisältöä sivulle
 
-4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service.ts", joka saa tiedon tietokantaa/backendiä simuloivalta "in-memory-data.service.ts"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu ohjeita: https://angular.io/tutorial/toh-pt6
+4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service", joka saa tiedon tietokantaa/backendiä simuloivalta "in-memory-data.service"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu ohjeita: https://angular.io/tutorial/toh-pt6
+
+5. Lisätty tyylejä ottamalla käyttöön Angular Material
 
 ## Creation
 

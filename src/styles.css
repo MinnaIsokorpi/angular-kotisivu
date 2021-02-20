@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/purple-green.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 2rem;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h2 {
+  padding-top: 1rem;
+}
+
+img {
+  /*max-width: 100%; /*scales the picture to fit the parent*/
+  display: block;
+  max-width: 700px;
+  width: 90%;
+  /*img is an "inline"-element, so let's make it a block-element for better flow with the texts.
+  A block-level element always starts on a new line and takes up the full width available.
+  An inline element does not start on a new line and it only takes up as much width as necessary.*/
+}

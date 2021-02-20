@@ -1,5 +1,8 @@
-<nav>
-  <a routerLink="me">Me, myself & I</a>
-  <a routerLink="studies">Studies</a>
-  <a routerLink="hobbies">Hobbies</a>
+<nav mat-tab-nav-bar>
+  <a mat-tab-link routerLink="/me" routerLinkActive #meTab="routerLinkActive" [active]="meTab.isActive">Me, myself &
+    I</a>
+  <a mat-tab-link routerLink="/studies" routerLinkActive #stuTab="routerLinkActive"
+    [active]="stuTab.isActive">Studies</a>
+  <a mat-tab-link routerLink="/hobbies" routerLinkActive #hobTab="routerLinkActive"
+    [active]="hobTab.isActive">Hobbies</a>
 </nav>

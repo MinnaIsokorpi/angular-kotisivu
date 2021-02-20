@@ -4,8 +4,8 @@
 
 <img src="assets/P2150327.JPG" />
 
-<ul>
-  <li *ngFor='let fakta of datas'>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor='let fakta of datas'>
     {{ fakta.info }}
-  </li>
-</ul>
+  </mat-list-item>
+</mat-list>

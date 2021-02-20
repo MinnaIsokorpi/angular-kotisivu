@@ -1,7 +1,7 @@
 <h2>Harrastuksia</h2>
 
-<ul>
-  <li *ngFor='let fakta of datas'>
+<mat-list role="list">
+  <mat-list-item role="listitem" *ngFor='let fakta of datas'>
     {{ fakta.info }}
-  </li>
-</ul>
+  </mat-list-item>
+</mat-list>

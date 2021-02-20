@@ -11,6 +11,10 @@ import { StudiesComponent } from './studies/studies.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MeComponent } from './me/me.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -31,6 +35,10 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),
+    BrowserAnimationsModule,
+    MatTabsModule,
+    MatToolbarModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
