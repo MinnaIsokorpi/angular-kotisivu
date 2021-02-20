@@ -1,5 +1,15 @@
 # AngKotisivu - Mintzin Angular-kotisivu
 
+1. Luotu uusi Angular-projekti Angular CLI:n avulla sekä siihen uudet komponentit "navbar", "me", "studies" ja "hobbies"
+
+2. Reititys ja navigointipalkki tämän ohjeen mukaan: https://angular.io/guide/router
+
+3. Luotu sisältöä sivulle
+
+4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service.ts", joka saa tiedon tietokantaa/backendiä simuloivalta "in-memory-data.service.ts"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu ohjeita: https://angular.io/tutorial/toh-pt6
+
+## Creation
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.6.
 
 ## Development server

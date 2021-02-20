@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MeData } from '../dataClasses';
+import { HomepageService } from '../homepage.service';
 
 @Component({
   selector: 'app-me',
@@ -7,16 +8,15 @@ import { MeData } from '../dataClasses';
   styleUrls: ['./me.component.css'],
 })
 export class MeComponent implements OnInit {
-  myDatas: MeData[] = [
-    { id: 1, info: 'Opintovapaalla' },
-    {
-      id: 2,
-      info: 'Istuu ikkunalla ja koodaa javaa (terveiset Jyväskylään Vesalle)',
-    },
-    { id: 3, info: 'On talvi' },
-  ];
+  datas: MeData[];
 
-  constructor() {}
+  constructor(private hpservice: HomepageService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getData();
+  }
+
+  getData(): void {
+    this.hpservice.getMeData().subscribe((medatas) => (this.datas = medatas));
+  }
 }

@@ -6,6 +6,7 @@ import { InMemoryDataService } from './in-memory-data.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { StudiesComponent } from './studies/studies.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MeComponent } from './me/me.component';
@@ -26,6 +27,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
+    // https://angular.io/tutorial/toh-pt6
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
     }),

@@ -1,10 +1,7 @@
 <h2>Harrastuksia</h2>
 
 <ul>
-  <li>Ratsastus</li>
-  <li>Uinti</li>
-  <li>Kävely tai lenkkeily</li>
-  <li>Pelaaminen (Sims4, Cities: Skylines yms)</li>
-  <li>Lumilautailu kun sää sallii</li>
-  <li>Seinäkiipeily</li>
+  <li *ngFor='let fakta of datas'>
+    {{ fakta.info }}
+  </li>
 </ul>
