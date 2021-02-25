@@ -1,28 +1,30 @@
-<h2>Koulujuttuja:</h2>
+<mat-card>
+  <mat-card-content>
+    <h3>JAMK - Jyväskylän ammattikorkeakoulu</h3>
+    <h4>Web-kehittäjä 30 op, 2021</h4>
+    <ul>
+      <ng-container *ngFor='let fakta of datas'>
+        <li *ngIf='fakta.id === 1'>
+          {{ fakta.info }}
+        </li>
+      </ng-container>
+    </ul>
 
-<h3>JAMK - Jyväskylän ammattikorkeakoulu</h3>
-<h4>Web-kehittäjä 30 op, 2021</h4>
-<ul>
-  <ng-container *ngFor='let fakta of datas'>
-    <li *ngIf='fakta.id === 1'>
-      {{ fakta.info }}
-    </li>
-  </ng-container>
-</ul>
+    <h4>Kyberturvallisuus 30 op, 2021</h4>
 
-<h4>Kyberturvallisuus 30 op, 2021</h4>
+    <ul>
+      <ng-container *ngFor='let fakta of datas'>
+        <li *ngIf='fakta.id === 2'>
+          {{ fakta.info }}
+        </li>
+      </ng-container>
+    </ul>
 
-<ul>
-  <ng-container *ngFor='let fakta of datas'>
-    <li *ngIf='fakta.id === 2'>
-      {{ fakta.info }}
-    </li>
-  </ng-container>
-</ul>
-
-<h3>TAMK - Tampereen ammattikorkeakoulu</h3>
-<h4>Tietotekniikan insinööri, 2014</h4>
-<ul>
-  <li>Ohjelmistotekniikka</li>
-  <li><a href="http://urn.fi/URN:NBN:fi:amk-2014120418575">Opinnäytetyö: Hälytyspalvelu Java-palvelimessa</a></li>
-</ul>
+    <h3>TAMK - Tampereen ammattikorkeakoulu</h3>
+    <h4>Tietotekniikan insinööri, 2014</h4>
+    <ul>
+      <li>Ohjelmistotekniikka</li>
+      <li><a href="http://urn.fi/URN:NBN:fi:amk-2014120418575">Opinnäytetyö: Hälytyspalvelu Java-palvelimessa</a></li>
+    </ul>
+  </mat-card-content>
+</mat-card>

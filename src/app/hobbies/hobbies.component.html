@@ -1,7 +1,17 @@
-<h2>Harrastuksia</h2>
-
-<mat-list role="list">
-  <mat-list-item role="listitem" *ngFor='let fakta of datas'>
-    {{ fakta.info }}
-  </mat-list-item>
-</mat-list>
+<mat-card>
+  <mat-card-header>
+    <div mat-card-avatar class="example-button-container">
+      <button mat-fab color="primary" aria-label="Example icon button with a heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+    </div>
+    <h2>Harrastuksia</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor='let fakta of datas'>
+        {{ fakta.info }}
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>
