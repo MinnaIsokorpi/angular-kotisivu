@@ -15,6 +15,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { MatListModule } from '@angular/material/list';
     NavbarComponent,
     MeComponent,
     HobbiesComponent,
+    MapComponent,
   ],
   imports: [
     BrowserModule,
