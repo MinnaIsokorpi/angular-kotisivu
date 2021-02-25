@@ -15,13 +15,6 @@ h2 {
 }
 
 img {
-  /*max-width: 100%; /*scales the picture to fit the parent*/
-  display: block;
-  max-width: 300px;
-  width: 90%;
-  border: 0.5rem dotted white;
-  padding: 0.5rem;
-  /*img is an "inline"-element, so let's make it a block-element for better flow with the texts.
-  A block-level element always starts on a new line and takes up the full width available.
-  An inline element does not start on a new line and it only takes up as much width as necessary.*/
+  max-width: 700px;
+  margin: 0.5rem;
 }

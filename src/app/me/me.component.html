@@ -1,13 +1,21 @@
 <mat-card>
-  <h2>Tervetuloa JAMK Frontend-kurssin tehtävä 4 Angular-kotisivulle!</h2>
+  <mat-card-header>
+    <mat-card-title>
+      <h2>Tervetuloa JAMK Frontend-kurssin tehtävä 4 Angular-kotisivulle!</h2>
+    </mat-card-title>
+  </mat-card-header>
 
-  <p>Tässä jotain random-faktoja ja pakollinen kuva...</p>
+  <img mat-card-image src="assets/P8070228.JPG" />
 
-  <img src="assets/P8070228.JPG" />
+  <mat-card-content>
 
-  <mat-list role="list">
-    <mat-list-item role="listitem" *ngFor='let fakta of datas'>
-      {{ fakta.info }}
-    </mat-list-item>
-  </mat-list>
+    <p>Pakollinen kuva sekä random faktoja minusta: </p>
+
+    <mat-list role="list">
+      <mat-list-item role="listitem" *ngFor='let fakta of datas'>
+        {{ fakta.info }}
+      </mat-list-item>
+    </mat-list>
+
+  </mat-card-content>
 </mat-card>
