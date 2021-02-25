@@ -2,7 +2,7 @@
   <mat-card-header>
     <div mat-card-avatar class="example-button-container">
       <button mat-fab color="primary" #testi="matButton" aria-label="Example icon button with a heart icon"
-        (click)="testi.color = 'accent'">
+        (click)="testi.color = testi.color == 'primary' ? 'accent' : 'primary'">
         <mat-icon>favorite</mat-icon>
       </button>
     </div>
