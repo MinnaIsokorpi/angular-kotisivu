@@ -8,7 +8,7 @@
 
 4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service", joka saa tiedon tietokantaa/backendiä simuloivalta "in-memory-data.service"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu ohjeita: https://angular.io/tutorial/toh-pt6
 
-5. Lisätty UI komponentteja ottamalla käyttöön Angular Material: List, Toolbar ja Tabs
+5. Lisätty UI komponentteja ottamalla käyttöön Angular Material: List, Toolbar, Tabs, Card ja Button
 
 6. Lisätty uusi komponentti "map" ja Map-välillehti kartalle
 

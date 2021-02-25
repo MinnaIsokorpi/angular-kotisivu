@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HobbiesData } from '../dataClasses';
 import { HomepageService } from '../homepage.service';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-hobbies',
