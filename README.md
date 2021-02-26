@@ -10,7 +10,18 @@
 
 5. Lisätty UI komponentteja ottamalla käyttöön Angular Material: List, Toolbar, Tabs, Card ja Button
 
-6. Lisätty uusi komponentti "map" ja Map-välillehti kartalle
+6. Lisätty uusi komponentti "map" ja Map-välillehti Leaflet-kartalle
+
+7. Lisätty karttaan toiminnallisuutta (https://www.digitalocean.com/community/tutorials/angular-angular-and-leaflet):
+   karttapalojen haku, täppä ja notifikaatio (https://developer.mozilla.org/en-US/docs/Web/API/notification)
+
+8. Tehty sovelluksesta PWA-sovellus (ng add @angular/pwa), TODO kesken!
+
+9. Yritetty lisätä Push-notifikaatio toiminto (https://malcoded.com/posts/angular-push-notifications/),
+   mutta koska meillä on käytössä tuo InMemoryWebApi noita sisältöjä varten, niin notifikaatioiden
+   vastaanottaminen ulkoiselta palvelimelta ja tuolta sisäiseltä ei voi toimia samaan aikaan.
+   Tässä vielä StackOverFlow-linkki, jossa ihmetelty samaa asiaa:
+   https://stackoverflow.com/questions/42386685/getting-json-for-angular-2-from-http-remote-server-fails-but-succeeds-localy
 
 ## Creation
 

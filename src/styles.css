@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import "@angular/material/prebuilt-themes/purple-green.css";
+@import "../node_modules/leaflet/dist/leaflet.css";
 
 html,
 body {
@@ -10,11 +11,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-h2 {
-  padding-top: 1rem;
-}
-
-img {
+#ratsu {
   max-width: 700px;
   margin: 0.5rem;
 }
