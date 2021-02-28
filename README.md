@@ -1,5 +1,8 @@
 # AngKotisivu - Mintzin Angular-kotisivu
 
+Tästä linkistä pääset katsomaan tajunnanräjäyttävän lopputuloksen:
+[mintzin-angular-kotisivu.web.app](mintzin-angular-kotisivu.web.app)
+
 1. Luotu uusi Angular-projekti Angular CLI:n avulla sekä siihen uudet komponentit "navbar", "me", "studies" ja "hobbies"
 
 2. Reititys ja navigointipalkki tämän ohjeen mukaan: https://angular.io/guide/router
