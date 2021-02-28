@@ -23,6 +23,8 @@
    Tässä vielä StackOverFlow-linkki, jossa ihmetelty samaa asiaa:
    https://stackoverflow.com/questions/42386685/getting-json-for-angular-2-from-http-remote-server-fails-but-succeeds-localy
 
+10. Luotu sivustolle oma GitHub-repo ja yritetty laittaa tämä sovellus sen kautta Firebase-palvelun kautta kaikkien ihailtavaksi, katsotaan miten käy...
+
 # Other documentation
 
 ## Creation
