@@ -1,12 +1,14 @@
 <mat-card>
   <mat-card-header>
     <div mat-card-avatar class="example-button-container">
-      <button mat-fab color="primary" #testi="matButton" aria-label="Example icon button with a heart icon"
+      <button mat-mini-fab color="primary" #testi="matButton" aria-label="Example icon button with a heart icon"
         (click)="testi.color = testi.color == 'primary' ? 'accent' : 'primary'">
         <mat-icon>favorite</mat-icon>
       </button>
     </div>
-    <h2>Harrastuksia</h2>
+    <mat-card-title>
+      Harrastuksia
+    </mat-card-title>
   </mat-card-header>
   <mat-card-content>
     <mat-list role="list">

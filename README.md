@@ -15,13 +15,15 @@
 7. Lisätty karttaan toiminnallisuutta (https://www.digitalocean.com/community/tutorials/angular-angular-and-leaflet):
    karttapalojen haku, täppä ja notifikaatio (https://developer.mozilla.org/en-US/docs/Web/API/notification)
 
-8. Tehty sovelluksesta PWA-sovellus (ng add @angular/pwa), TODO kesken!
+8. Tehty sovelluksesta PWA-sovellus (ng add @angular/pwa), buildattu sovellus ja kokeiltu sitä http-server avulla, mutta Chromen Lighthouse ei tykkää siitä yhtään, raportti täyttä erroria ja ylhäällä teksti: "Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests."
 
 9. Yritetty lisätä Push-notifikaatio toiminto (https://malcoded.com/posts/angular-push-notifications/),
    mutta koska meillä on käytössä tuo InMemoryWebApi noita sisältöjä varten, niin notifikaatioiden
    vastaanottaminen ulkoiselta palvelimelta ja tuolta sisäiseltä ei voi toimia samaan aikaan.
    Tässä vielä StackOverFlow-linkki, jossa ihmetelty samaa asiaa:
    https://stackoverflow.com/questions/42386685/getting-json-for-angular-2-from-http-remote-server-fails-but-succeeds-localy
+
+# Other documentation
 
 ## Creation
 

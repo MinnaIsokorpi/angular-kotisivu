@@ -50,16 +50,19 @@ export class MapComponent implements AfterViewInit {
       this.lon = location.coords.longitude;
       console.log(this.lat + ' ' + this.lon);
 
-      this.map = L.map('map').setView(this.latlng, 13);
+      if (this.map == null) {
+        this.map = L.map('map').setView(this.latlng, 13);
+        // Alakulmaan mittatikku:
+        L.control.scale().addTo(this.map);
+      } else {
+        this.map.setView(this.latlng, 13);
+      }
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution:
           '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }).addTo(this.map);
-
-      // Alakulmaan mittatikku:
-      L.control.scale().addTo(this.map);
 
       // Täppä kartalle:
       L.marker(this.latlng).bindPopup('Hei sä oot tässä').addTo(this.map);
