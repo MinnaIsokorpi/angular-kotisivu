@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { from } from 'rxjs';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { MapComponent } from './map/map.component';
 import { MeComponent } from './me/me.component';
@@ -12,6 +11,7 @@ const routes: Routes = [
   { path: 'studies', component: StudiesComponent },
   { path: 'hobbies', component: HobbiesComponent },
   { path: '', redirectTo: '/me', pathMatch: 'full' },
+  { path: 'index.html', redirectTo: '/me', pathMatch: 'full' },
   { path: 'map', component: MapComponent },
 ];
 
