@@ -11,7 +11,6 @@ const routes: Routes = [
   { path: 'studies', component: StudiesComponent },
   { path: 'hobbies', component: HobbiesComponent },
   { path: '', redirectTo: '/me', pathMatch: 'full' },
-  { path: 'index.html', redirectTo: '/me', pathMatch: 'full' },
   { path: 'map', component: MapComponent },
 ];
 
