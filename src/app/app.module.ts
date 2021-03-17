@@ -4,9 +4,12 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
+import { AppRoutingModule } from './app-routing.module';
+
+import { AppComponent } from './app.component';
 import { StudiesComponent } from './studies/studies.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MeComponent } from './me/me.component';
@@ -48,6 +51,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatCardModule,
     MatButtonModule,
     MatIconModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent],

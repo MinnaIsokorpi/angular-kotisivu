@@ -9,24 +9,32 @@ Tästä linkistä pääset katsomaan tajunnanräjäyttävän lopputuloksen:
 
 3. Luotu sisältöä sivulle
 
-4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service", joka saa tiedon tietokantaa/backendiä simuloivalta "in-memory-data.service"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu ohjeita: https://angular.io/tutorial/toh-pt6
+4. Siirretty osa sisällöstä palveluun ja laitettu komponentit hakemaan sisältö http-pyyntönä palvelusta "homepage.service", joka saa tiedon
+   tietokantaa/backendiä simuloivalta "in-memory-data.service"-palvelulta. Sisällön luokat määritelty "dataClasses.ts". Tästä kohtaa napattu
+   ohjeita: https://angular.io/tutorial/toh-pt6
 
 5. Lisätty UI komponentteja ottamalla käyttöön Angular Material: List, Toolbar, Tabs, Card ja Button
 
 6. Lisätty uusi komponentti "map" ja Map-välillehti Leaflet-kartalle
 
 7. Lisätty karttaan toiminnallisuutta (https://www.digitalocean.com/community/tutorials/angular-angular-and-leaflet):
-   karttapalojen haku, täppä ja notifikaatio (https://developer.mozilla.org/en-US/docs/Web/API/notification)
+   karttapalojen haku, täppä ja notifikaatio (https://developer.mozilla.org/en-US/docs/Web/API/notification).
+   Notifikaatio ei tunnu toimivan Chromella, mutta Edgellä se tulee, luulen että ongelma on selainasetuksissa?
 
-8. Tehty sovelluksesta PWA-sovellus (ng add @angular/pwa), buildattu sovellus ja kokeiltu sitä http-server avulla, mutta Chromen Lighthouse ei tykkää siitä yhtään, raportti täyttä erroria ja ylhäällä teksti: "Chrome prevented page load with an interstitial. Make sure you are testing the correct URL and that the server is properly responding to all requests."
+8. Luotu sivustolle oma GitHub-repo ja yritetty laittaa tämä sovellus sen kautta Firebase-palvelun kautta kaikkien ihailtavaksi, katsotaan miten käy... nyt toimii <3
 
-9. Yritetty lisätä Push-notifikaatio toiminto (https://malcoded.com/posts/angular-push-notifications/),
-   mutta koska meillä on käytössä tuo InMemoryWebApi noita sisältöjä varten, niin notifikaatioiden
-   vastaanottaminen ulkoiselta palvelimelta ja tuolta sisäiseltä ei voi toimia samaan aikaan.
-   Tässä vielä StackOverFlow-linkki, jossa ihmetelty samaa asiaa:
-   https://stackoverflow.com/questions/42386685/getting-json-for-angular-2-from-http-remote-server-fails-but-succeeds-localy
+9. Tehty sovelluksesta PWA-sovellus (ng add @angular/pwa), buildattu sovellus ja ajettu testit Firebase-palvelun hostaamalle sivulle.
+   Seuraavat vielä puuttuu:
 
-10. Luotu sivustolle oma GitHub-repo ja yritetty laittaa tämä sovellus sen kautta Firebase-palvelun kautta kaikkien ihailtavaksi, katsotaan miten käy...
+- Current page does not respond with a 200 when offline
+- start_url does not respond with a 200 when offlineTimed out waiting for start_url (https://mintzin-angular-kotisivu.web.app/) to respond.
+- Does not register a service worker that controls page and start_url
+
+10. Yritetty lisätä Push-notifikaatio toiminto (https://malcoded.com/posts/angular-push-notifications/),
+    mutta koska meillä on käytössä tuo InMemoryWebApi noita sisältöjä varten, niin notifikaatioiden
+    vastaanottaminen ulkoiselta palvelimelta ja tuolta sisäiseltä ei voi toimia samaan aikaan.
+    Tässä vielä StackOverFlow-linkki, jossa ihmetelty samaa asiaa:
+    https://stackoverflow.com/questions/42386685/getting-json-for-angular-2-from-http-remote-server-fails-but-succeeds-localy
 
 # Other documentation
 
